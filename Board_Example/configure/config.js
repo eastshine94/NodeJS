@@ -3,13 +3,19 @@ module.exports = {
     db_url : "mongodb://localhost:27017/local",
     db_schemas: [
         {file:'./user_schema',collection:'users6', schemaName: 'UserSchema',
-        modelName:'UserModel'}
+        modelName:'UserModel'},
+        {file:'./post_schema',collection:'post', schemaName: 'PostSchema',
+        modelName:'PostModel'},
     ],
     route_info: [
         {file:'./user',path:'/process/login',method:'login', type:'post'},
         {file:'./user',path:'/process/adduser',method:'adduser', type:'post'},
         {file:'./user',path:'/process/listuser',method:'listuser', type:'post'},
-        {file:'./test',path:'/process/test1',method:'test1', type:'post'}
+        {file:'./test',path:'/process/test1',method:'test1', type:'post'},
+        {file:'./post',path:'/process/addpost',method:'addpost', type:'post'},
+        {file:'./post', path:'/process/showpost/:id', method:'showpost', type:'get'},
+        {file:'./post', path:'/process/listpost', method:'listpost', type:'post'},
+        {file:'./post', path:'/process/listpost', method:'listpost', type:'get'}
     ]
 
 };

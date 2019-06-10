@@ -33,14 +33,6 @@ let mongoose = require('mongoose');
 
 let database;
 
-
-function createUserSchema(database){
-    database.UserSchema = require('./database/user_schema').createSchema(mongoose);
-    database.UserModel = mongoose.model('users5', database.UserSchema);
-    console.log('UserModel 정의함');
-}
-
-
 let app = express();
 
 app.set('views', __dirname + '/views');
