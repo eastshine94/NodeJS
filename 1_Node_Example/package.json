@@ -6,7 +6,7 @@
   "dependencies": {
     "data-utils": "0.0.2",
     "moment": "^2.24.0",
-    "nconf": "^0.10.0",
+    "nconf": "^0.11.4",
     "winston": "^3.2.1",
     "winston-daily-rotate-file": "^3.9.0"
   },
